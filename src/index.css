@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-container {
+    @apply min-h-screen bg-gray-100 p-4 sm:p-6;
+  }
+
+  .header {
+    @apply flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6;
+  }
+
+  .title {
+    @apply text-xl sm:text-2xl font-bold text-gray-800;
+  }
+
+  .btn-add {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 w-full sm:w-auto;
+  }
+
+  .blocks-container {
+    @apply grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-1;
+  }
+
+  .block-card {
+    @apply bg-white p-3 sm:p-4 rounded-xl shadow-md border;
+  }
+
+  .block-title {
+    @apply w-full text-base sm:text-lg font-semibold mb-2 border-b focus:outline-none bg-transparent;
+  }
+
+  .block-content {
+    @apply w-full h-24 sm:h-28 p-2 border rounded-lg resize-none focus:outline-none;
+  }
+
+  .block-preview {
+    @apply p-2 border rounded-lg bg-gray-50 min-h-[70px] sm:min-h-[80px];
+  }
+
+  .block-actions {
+    @apply flex flex-col sm:flex-row justify-end gap-2 mt-3;
+  }
+
+  .btn-copy {
+    @apply bg-green-600 text-white px-3 py-2 sm:py-1 rounded transition w-full sm:w-auto;
+  }
+
+  .btn-copied {
+    @apply bg-emerald-800;
+  }
+
+  .btn-lock {
+    @apply bg-gray-600 text-white px-3 py-2 sm:py-1 rounded w-full sm:w-auto;
+  }
+
+  .toast {
+    @apply fixed bottom-4 right-4 sm:bottom-5 sm:right-5 bg-black text-white px-4 py-2 rounded-lg shadow-lg text-sm sm:text-base;
+  }
+
+  .nav-bar {
+    @apply grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-4 mb-6 border-b pb-3;
+  }
+
+  .nav-link {
+    @apply text-blue-600 font-medium text-center py-2
+         hover:scale-105 transition-transform duration-200 ease-in-out;
+  }
+
+  .active {
+    @apply text-black border-b-2 border-black;
+  }
+
+  /* Cover Letter */
+  .cl-container {
+    @apply min-h-screen bg-gray-100 p-4 sm:p-6;
+  }
+
+  .cl-title {
+    @apply text-xl sm:text-2xl font-bold mb-6 text-gray-800;
+  }
+
+  .cl-grid {
+    @apply grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .cl-card {
+    @apply bg-white p-3 sm:p-4 rounded-xl shadow border;
+  }
+
+  .cl-card-title {
+    @apply font-semibold text-base sm:text-lg mb-2;
+  }
+
+  .cl-content {
+    @apply whitespace-pre-wrap text-xs sm:text-sm bg-gray-50 p-3 rounded border;
+  }
+
+  .cl-actions {
+    @apply flex flex-col sm:flex-row gap-2 justify-end mt-3;
+  }
+
+  .cl-btn-copy {
+    @apply bg-green-600 text-white px-3 py-2 sm:py-1 rounded w-full sm:w-auto;
+  }
+
+  .cl-copied {
+    @apply bg-green-900;
+  }
+
+  .cl-btn-pdf {
+    @apply bg-blue-600 text-white px-3 py-2 sm:py-1 rounded w-full sm:w-auto;
+  }
+
+  .cl-toast {
+    @apply fixed bottom-4 right-4 sm:bottom-5 sm:right-5 bg-black text-white px-4 py-2 rounded text-sm sm:text-base;
+  }
+}
