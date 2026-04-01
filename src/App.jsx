@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="app-container">
       {/* 🔹 Navigation */}
-      <nav className="nav-bar">
+      <nav className="nav-bar bg-gray-100 sticky pt-4 top-0 z-50">
         <NavLink
           to="/resume-blocks"
           className={({ isActive }) =>
@@ -57,7 +57,7 @@ const App = () => {
         <Route path="/message-formats" element={<MessageFormats />} />
         <Route path="/email-templates" element={<EmailTemplates />} />
       </Routes>
-    </div>
+    </div >
   );
 };
 

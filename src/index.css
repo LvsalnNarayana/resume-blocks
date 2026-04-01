@@ -3,9 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --nav-height: 133px;
+  /* mobile default */
+}
+
+@media (min-width: 769px) {
+  :root {
+    --nav-height: 78px;
+  }
+}
+
+@media (min-width: 1025px) {
+  :root {
+    --nav-height: 78px;
+  }
+}
+
 @layer components {
   .app-container {
-    @apply min-h-screen bg-gray-100 p-4 sm:p-6;
+    @apply min-h-screen bg-gray-100 p-4 pt-0 sm:p-6;
+
+    @media (width >=40rem) {
+      padding-top: calc(var(--spacing) * 0);
+    }
   }
 
   .header {
@@ -65,8 +86,7 @@
   }
 
   .nav-link {
-    @apply text-blue-600 font-medium text-center py-2
-         hover:scale-105 transition-transform duration-200 ease-in-out;
+    @apply text-blue-600 font-medium text-center py-2 hover:scale-105 transition-transform duration-200 ease-in-out;
   }
 
   .active {

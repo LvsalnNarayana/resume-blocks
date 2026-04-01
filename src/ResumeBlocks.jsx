@@ -89,16 +89,10 @@ system reliability, performance, and user engagement.`,
       id: 16,
       category: "Experience",
       title: "Responsibilities - Java Developer",
-      content: `
-      - Developed scalable backend services for a large-scale telecom platform using Java, Spring Boot,
-and microservices, ensuring high availability and performance in distributed systems.
-- Designed and documented RESTful APIs using Swagger and Confluence, standardizing
-integrations and speeding up onboarding for frontend and third-party developers.
-- Architected eﬃcient integration of Spring Boot services with legacy CRM systems, reducing data
-exchange latency and improving system interoperability.
-- Configured and implemented secure middleware integration utilizing IBM DataPower and IBM
-MQ to enable reliable XML/JSON RPC communication between modern APIs and legacy systems,
-while ensuring strong unit test coverage in a SOA environment.`,
+      content: `- Developed scalable backend services for a large-scale telecom platform using Java, Spring Boot, and microservices, ensuring high availability and performance in distributed systems.
+- Designed and documented RESTful APIs using Swagger and Confluence, standardizing integrations and speeding up onboarding for frontend and third-party developers.
+- Architected eﬃcient integration of Spring Boot services with legacy CRM systems, reducing data exchange latency and improving system interoperability.
+- Configured and implemented secure middleware integration utilizing IBM DataPower and IBM MQ to enable reliable XML/JSON RPC communication between modern APIs and legacy systems, while ensuring strong unit test coverage in a SOA environment.`,
       locked: true,
     },
 
@@ -121,15 +115,10 @@ while ensuring strong unit test coverage in a SOA environment.`,
       id: 19,
       category: "Experience",
       title: "Responsibilities - Frontend Engineer (Cogniverse)",
-      content: `
-      - Led React frontend development for telecom operator dashboard; built 25+ reusable
-components across 20+ modules and reduced CRM response time by 30%.
-- Implemented optimized data loading, virtualization, and rendering for smooth handling of
-thousands of records in complex tables.
-- Architected real-time AI model API and map visualization integration for Kumbh Mela 2025
-dashboard, cutting issue response time by 25% while supporting 100+ daily users.
-- Optimized Redux state management and API patterns to improve data consistency and rendering
-performance.`,
+      content: `- Led React frontend development for telecom operator dashboard; built 25+ reusable components across 20+ modules and reduced CRM response time by 30%.
+- Implemented optimized data loading, virtualization, and rendering for smooth handling of thousands of records in complex tables.
+- Architected real-time AI model API and map visualization integration for Kumbh Mela 2025 dashboard, cutting issue response time by 25% while supporting 100+ daily users.
+- Optimized Redux state management and API patterns to improve data consistency and rendering performance.`,
       locked: true,
     },
 
@@ -166,15 +155,10 @@ performance.`,
       id: 24,
       category: "Experience",
       title: "Responsibilities - i13 Ventures",
-      content: `
-      - Architected complete frontend system for AI-driven business intelligence platform; defined
-scalable component architecture, data flow, and state management for long-term maintainability.
-- Built Backend-for-Frontend (BFF) layer with Node.js to aggregate data from multiple ML
-microservices, reducing API response latency by 35%.
-- Engineered real-time AI-powered chat and visualization interface with optimized API handling
-and performance tuning, increasing user engagement by 30% and enabling faster live updates.
-- Designed modular authentication, routing, and payment system integrating Stripe and Clerk,
-improving platform security and user experience.`,
+      content: `- Architected complete frontend system for AI-driven business intelligence platform; defined scalable component architecture, data flow, and state management for long-term maintainability.
+- Built Backend-for-Frontend (BFF) layer with Node.js to aggregate data from multiple ML microservices, reducing API response latency by 35%.
+- Engineered real-time AI-powered chat and visualization interface with optimized API handling and performance tuning, increasing user engagement by 30% and enabling faster live updates.
+- Designed modular authentication, routing, and payment system integrating Stripe and Clerk, improving platform security and user experience.`,
       locked: true,
     },
 
@@ -211,15 +195,10 @@ improving platform security and user experience.`,
       id: 29,
       category: "Experience",
       title: "Responsibilities - f1Studioz",
-      content: `
-      - Architected dynamic data visualization platform using Angular 13 with scalable drag-and-drop
-interface for enterprise analytics and complex data operations.
-- Designed reusable Angular component library, boosting development eﬃciency by 30% and
-enforcing consistent UI standards across projects.
-- Built real-time admin dashboard integrated with third-party APIs, delivering live insights and
-reducing issue response time by 25%.
-- Optimized frontend performance through improved change detection, API handling, and lazy
-loading for faster user interactions.`,
+      content: `- Architected dynamic data visualization platform using Angular 13 with scalable drag-and-drop interface for enterprise analytics and complex data operations.
+- Designed reusable Angular component library, boosting development eﬃciency by 30% and enforcing consistent UI standards across projects.
+- Built real-time admin dashboard integrated with third-party APIs, delivering live insights and reducing issue response time by 25%.
+- Optimized frontend performance through improved change detection, API handling, and lazy loading for faster user interactions.`,
       locked: true,
     },
 
@@ -256,15 +235,10 @@ loading for faster user interactions.`,
       id: 34,
       category: "Experience",
       title: "Responsibilities - EC-Council",
-      content: `
-      - Developed interactive product pages using WordPress and custom JavaScript, enhancing
-functionality and user engagement across web platforms.
-- Optimized scripts, assets, and performance to improve Google PageSpeed score from 65 to 96,
-cut load times by 50%, and increase user traﬃc by 40%.
-- Implemented low-code marketing solutions with Webflow, speeding up campaign delivery and
-streamlining CMS content workflows.
-- Collaborated with design and marketing teams to build responsive, cross-browser-compatible
-web interfaces with consistent visual quality.`,
+      content: `- Developed interactive product pages using WordPress and custom JavaScript, enhancing functionality and user engagement across web platforms.
+- Optimized scripts, assets, and performance to improve Google PageSpeed score from 65 to 96, cut load times by 50%, and increase user traﬃc by 40%.
+- Implemented low-code marketing solutions with Webflow, speeding up campaign delivery and streamlining CMS content workflows.
+- Collaborated with design and marketing teams to build responsive, cross-browser-compatible web interfaces with consistent visual quality.`,
       locked: true,
     },
 
@@ -339,13 +313,13 @@ web interfaces with consistent visual quality.`,
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-2 sm:p-4 lg:p-6">
+    <div className="min-h-screen bg-gray-100 p-0 sm:p-0 lg:p-0">
       {showToast && <div className="toast">Copied!</div>}
 
       <h1 className="title mb-4">Resume Copy Blocks</h1>
 
       {/* 🔍 Search Bar */}
-      <div className="mb-4">
+      <div style={{ top: "var(--nav-height)" }} className="sticky z-40 bg-gray-100 py-3 border-b mb-4">
         <input
           type="text"
           placeholder="Search blocks..."
@@ -356,24 +330,45 @@ web interfaces with consistent visual quality.`,
       </div>
 
       {/* 📦 Blocks */}
-      <div className="blocks-container">
+      <div className="blocks-container px-1">
         {filteredBlocks.length > 0 ? (
           filteredBlocks.map((block) => (
             <div key={block.id} className="block-card">
-              <div className="text-xs text-gray-400 mb-1">{block.category}</div>
+              <div className="flex gap-5 flex-row justify-end items-center">
+                <div className="w-full">
+                  <div className="text-xs text-gray-400 mb-1">{block.category}</div>
+                  <input
+                    className="block-title"
+                    value={block.title}
+                    disabled={block.locked}
+                    onChange={(e) =>
+                      setBlocks((prev) =>
+                        prev.map((b) =>
+                          b.id === block.id ? { ...b, title: e.target.value } : b,
+                        ),
+                      )
+                    }
+                  />
+                </div>
+                <div className="block-actions w-fit">
+                  <button
+                    className={`btn-copy ${copiedId === block.id ? "btn-copied" : ""
+                      }`}
+                    onClick={() => copyToClipboard(block.content, block.id)}
+                  >
+                    {copiedId === block.id ? "Copied" : "Copy"}
+                  </button>
 
-              <input
-                className="block-title"
-                value={block.title}
-                disabled={block.locked}
-                onChange={(e) =>
-                  setBlocks((prev) =>
-                    prev.map((b) =>
-                      b.id === block.id ? { ...b, title: e.target.value } : b,
-                    ),
-                  )
-                }
-              />
+                  {/* <button
+                  className="btn-lock"
+                  onClick={() => toggleLock(block.id)}
+                >
+                  {block.locked ? "Unlock" : "Lock"}
+                </button> */}
+                </div>
+              </div>
+
+
 
               {!block.locked ? (
                 <textarea
@@ -395,23 +390,7 @@ web interfaces with consistent visual quality.`,
                 </div>
               )}
 
-              <div className="block-actions">
-                <button
-                  className={`btn-copy ${
-                    copiedId === block.id ? "btn-copied" : ""
-                  }`}
-                  onClick={() => copyToClipboard(block.content, block.id)}
-                >
-                  {copiedId === block.id ? "Copied" : "Copy"}
-                </button>
 
-                <button
-                  className="btn-lock"
-                  onClick={() => toggleLock(block.id)}
-                >
-                  {block.locked ? "Unlock" : "Lock"}
-                </button>
-              </div>
             </div>
           ))
         ) : (
