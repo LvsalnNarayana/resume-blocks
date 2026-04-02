@@ -21,13 +21,7 @@ function ResumeBlocks() {
       id: 3,
       category: "Identity",
       title: "Professional Summary",
-      content: `Full Stack Developer with 4+ years of experience designing and building scalable web applications
-across frontend and backend layers using React, Angular, TypeScript, Java, and Spring Boot. Strong
-expertise in developing responsive user interfaces, building RESTful APIs, integrating microservices,
-and optimizing performance for high-traﬃc, data-intensive systems. Experienced in real-time
-systems, API-driven architectures, and secure authentication and payment integrations. Proven
-ability to collaborate in Agile teams to deliver maintainable, high-quality solutions that improve
-system reliability, performance, and user engagement.`,
+      content: `Full Stack Developer with 4+ years of experience designing and building scalable web applications across frontend and backend layers using React, Angular, TypeScript, Java, and Spring Boot. Strong expertise in developing responsive user interfaces, building RESTful APIs, integrating microservices, and optimizing performance for high-traﬃc, data-intensive systems. Experienced in real-time systems, API-driven architectures, and secure authentication and payment integrations. Proven ability to collaborate in Agile teams to deliver maintainable, high-quality solutions that improve system reliability, performance, and user engagement.`,
       locked: true,
     },
 
@@ -286,11 +280,11 @@ system reliability, performance, and user engagement.`,
     }, 2000);
   };
 
-  const toggleLock = (id) => {
-    setBlocks((prev) =>
-      prev.map((b) => (b.id === id ? { ...b, locked: !b.locked } : b)),
-    );
-  };
+  // const toggleLock = (id) => {
+  //   setBlocks((prev) =>
+  //     prev.map((b) => (b.id === id ? { ...b, locked: !b.locked } : b)),
+  //   );
+  // };
 
   const renderContent = (text) => {
     return text.split("\n").map((line, i) => {
